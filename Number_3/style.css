@@ -1,3 +1,8 @@
+p {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,8 +12,12 @@ header,
 footer {
   background: #333;
   color: #fff;
-  padding: 15px 0;
 }
+
+footer{
+  padding: 40px 0;
+}
+
 
 .container {
   max-width: 960px;
@@ -24,41 +33,25 @@ footer {
   color: #fff;
 }
 
+.site-title{
+  padding: 18px 0;
+}
+
 .site-title {
   margin: 0;
   line-height: 40px;
 }
 
 nav {
-  background: #eee;
-  padding: 10px 0;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  position: relative;
 }
 
 .menu a {
-  text-decoration: none;
-  color: #333;
-}
-
-
-.main-flex {
+  margin-right: 15px;
   display: flex;
-  flex-direction: column;
-}
+  text-decoration: column;
+  color: #383838;
 
-.table-section {
-  order: 1;
-}
-.links {
-  order: 2;
-}
-.form {
-  order: 3;
 }
 
 main section {
@@ -82,9 +75,23 @@ tr:nth-child(even) {
 }
 
 
+footer div{
+  padding: 0 30px;
+}
+
 @media (min-width: 768px) {
+
+
   .menu {
     flex-direction: row;
+  }
+
+  nav {
+    position: absolute;
+    padding: 10px 0;
+    right: 0;
+    top: 0;
+    a {color: #fff;}
   }
 
   .table-section {
