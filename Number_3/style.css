@@ -94,7 +94,7 @@ footer div{
     right: 0;
     top: 0;
    .menu {
-     display: flex
+     display: flex;
      flex-direction: row;
     }
     .menu a {color: #fff;}
