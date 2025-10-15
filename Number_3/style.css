@@ -82,16 +82,17 @@ footer div{
 @media (min-width: 768px) {
 
 
-  .menu {
-    flex-direction: row;
-  }
 
   nav {
     position: absolute;
     padding: 10px 0;
     right: 0;
     top: 0;
-    a {color: #fff;}
+   .menu {
+     display: flex
+     flex-direction: row;
+    }
+    .menu a {color: #fff;}
   }
 
   .table-section {
