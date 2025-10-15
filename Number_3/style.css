@@ -54,6 +54,11 @@ nav {
 
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 main section {
   margin: 20px 0;
 }
@@ -99,9 +104,9 @@ footer div{
     order: 0;
   }
   .links {
-    order: 0;
+    order: 1;
   }
   .form {
-    order: 0;
+    order: 2;
   }
 }
