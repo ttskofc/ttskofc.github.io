@@ -12,8 +12,12 @@ header,
 footer {
   background: #333;
   color: #fff;
-  padding: 15px 0;
 }
+
+footer{
+  padding: 40px 0;
+}
+
 
 .container {
   max-width: 960px;
@@ -29,20 +33,26 @@ footer {
   color: #fff;
 }
 
+.site-title{
+  padding: 18px 0;
+}
+
 .site-title {
   margin: 0;
   line-height: 40px;
 }
 
 nav {
-  background: #eee;
+  position: absolute;
   padding: 10px 0;
+  right: 0;
 }
 
 .menu a {
   margin-right: 15px;
   text-decoration: none;
-  color: #333;
+  color: #fff;
+
 }
 
 main section {
@@ -63,4 +73,9 @@ td {
 
 tr:nth-child(even) {
   background: #f2f2f2;
+}
+
+
+footer div{
+  padding: 0 30px;
 }
