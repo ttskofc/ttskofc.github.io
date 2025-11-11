@@ -1,0 +1,70 @@
+/* Минимальный CSS: мобильный-first, flex + order */
+:root {
+  --max-w: 960px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 24px;
+}
+.table-section {
+  order: 1;
+}
+.links {
+  order: 2;
+}
+.form {
+  order: 3;
+}
+
+.simple-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.simple-table th,
+.simple-table td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+}
+.simple-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+  .main-flex {
+    flex-direction: column;
+  }
+  .table-section {
+    order: 0;
+  }
+  .links {
+    order: 0;
+  }
+  .form {
+    order: 0;
+  }
+  .ant-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+}
+
+.ant-menu-item {
+  color: #fff !important;
+}
