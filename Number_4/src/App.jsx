@@ -351,7 +351,7 @@ export default function App() {
       </Content>
 
       <Footer
-        style={{ textAlign: "center", background: "#333", color: "#fff" }}
+        style={{ background: "#333", color: "#fff" }}
       >
         (c) Тоцкий Данил
       </Footer>
