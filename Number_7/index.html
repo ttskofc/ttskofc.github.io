@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
 
-    <!-- Swiper CSS -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
         .swiper {
-            width: 90%;
-            margin: 60px auto 40px;  /* отступ сверху, чтобы стрелки не мешали */
-            padding: 0 50px;         /* отступы слева/справа, чтобы стрелки были вне фото */
+            width: 75%;
+            margin: 60px auto 40px;  
+            padding: 0 90px 0 70px;        
             box-sizing: border-box;
             position: relative;
+            overflow: hidden;
         }
 
         .swiper-slide img {
@@ -24,34 +25,30 @@
             border-radius: 10px;
         }
 
-        /* --- НАВИГАЦИЯ ВНЕ ИЗОБРАЖЕНИЙ --- */
 
-        /* Стрелки вынесены за изображения */
         .swiper-button-prev,
         .swiper-button-next {
             color: black;
-            width: 40px;
-            height: 40px;
+            width: 60px;
+            height: 60px;
             background: white;
             border-radius: 50%;
             box-shadow: 0 0 8px rgba(0,0,0,0.15);
         }
 
         .swiper-button-prev {
-            left: 0;   /* слева от фото */
+            left: 0;   
         }
 
         .swiper-button-next {
-            right: 0;  /* справа от фото */
+            right: 0;  
         }
 
-        /* --- ПАГИНАЦИЯ ВНИЗУ И НЕ ПЕРЕКРЫВАЕТ --- */
         .swiper-pagination {
-            margin-top: 20px;  /* опустить ниже картинок */
+            margin-top: 20px;
             position: relative;
         }
 
-        /* точки */
         .swiper-pagination-bullet {
             width: 10px;
             height: 10px;
@@ -90,22 +87,21 @@
 
         </div>
 
-        <!-- Стрелки -->
+
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        <!-- Точки -->
         <div class="swiper-pagination"></div>
     </div>
 
-    <!-- Swiper JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
         const swiper = new Swiper('.swiper', {
             loop: true,
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 100,
 
             pagination: {
                 el: '.swiper-pagination',
