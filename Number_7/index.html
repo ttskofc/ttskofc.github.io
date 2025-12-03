@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+</head>
+<body>
+
+    <div class="carousel">
+        <div><img src="https://avatars.mds.yandex.net/i?id=25ad8b3dfa2e5e9d2deee2d33f4aba6c319fa1c6-12980679-images-thumbs&n=13" alt="nike"></div>
+        <div><img src="https://avatars.mds.yandex.net/i?id=3db351151d5f179586baec4f15be235b7502c8ac44bd3762-5875570-images-thumbs&n=13" alt="win">t</div>
+        <div><img src="https://avatars.mds.yandex.net/i?id=627f1fb5f48472e241f7225f487d2158b5ad8472-9106682-images-thumbs&n=13" alt="harley"></div>
+        <div><img src="https://avatars.mds.yandex.net/i?id=50320cfe111e5f8bbfc4d5f3f74bd5c276c8986033f900ba-8174002-images-thumbs&n=13" alt="nb"></div>
+        <div><img src="https://avatars.mds.yandex.net/i?id=9011eb7ce8acb4dcf220ffb077448ce7434520fb-17698047-images-thumbs&n=13" alt="sb"></div>
+        <div><img src="https://avatars.mds.yandex.net/i?id=2453660d6c0824b16783b95451c2857ead98389e-5856184-images-thumbs&n=13" alt="passat"></div>
+        <div><img src="https://lekalo-rf.ru/image/cache/catalog/subaru/subaru_outback_514554-800x800.jpg" alt="subaru" width="800px" height="800px"></div>
+        <div><img src="https://avatars.mds.yandex.net/i?id=74f3130c78e528459e93e45b82da9b6a_l-12421302-images-thumbs&n=13" alt="" width="800px" height="800px"></div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+        });
+  </script>
+</body>
+</html>
