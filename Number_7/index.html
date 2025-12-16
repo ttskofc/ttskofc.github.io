@@ -1,121 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slider</title>
 
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <style>
-        .swiper {
-            width: 75%;
-            margin: 60px auto 40px;  
-            padding: 0 90px 0 70px;        
-            box-sizing: border-box;
-            position: relative;
-            overflow: hidden;
-        }
+      body {
+        height: 100vh;
+        background-image: url("https://cdn.culture.ru/images/ceb9ac51-3d33-5e6e-a99c-c56c9ebff9ec");
+        backdrop-filter: blur(5px);
+      }
+      header,
+      footer {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+      }
 
-        .swiper-slide img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
 
+      .swiper {
+        width: 75%;
+        margin: 60px auto 40px;
+        padding: 0 90px 0 70px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+      }
 
-        .swiper-button-prev,
-        .swiper-button-next {
-            color: black;
-            width: 60px;
-            height: 60px;
-            background: white;
-            border-radius: 50%;
-            box-shadow: 0 0 8px rgba(0,0,0,0.15);
-        }
+      .swiper-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+      }
 
-        .swiper-button-prev {
-            left: 0;   
-        }
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: black;
+        width: 60px;
+        height: 60px;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+      }
 
-        .swiper-button-next {
-            right: 0;  
-        }
+      .swiper-button-prev {
+        left: 0;
+      }
 
-        .swiper-pagination {
-            margin-top: 20px;
-            position: relative;
-        }
+      .swiper-button-next {
+        right: 0;
+      }
 
-        .swiper-pagination-bullet {
-            width: 10px;
-            height: 10px;
-            background: #ccc;
-            opacity: 1;
-            margin: 0 6px !important;
-            transition: 0.3s;
-        }
+      .swiper-pagination {
+        margin-top: 20px;
+        position: relative;
+      }
 
-        .swiper-pagination-bullet-active {
-            background: #000;
-            transform: scale(1.5);
-        }
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: #ccc;
+        opacity: 1;
+        margin: 0 6px !important;
+        transition: 0.3s;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #000;
+        transform: scale(1.5);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div class="head"><h1>Третьяковская галерея</h1></div>
+    </header>
 
     <div class="swiper">
-        <div class="swiper-wrapper">
-            
-            <div class="swiper-slide"><img src="https://lekalo-rf.ru/image/cache/catalog/subaru/subaru_outback_514554-800x800.jpg"></div>
-            <div class="swiper-slide"><img src="https://i.pinimg.com/736x/42/a8/e1/42a8e1050aff728ec52756225e47c454.jpg"></div>
-            <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Blue-eared_Kingfisher%281%29.jpg"></div>
-            <div class="swiper-slide"><img src="https://i.pinimg.com/736x/ec/76/51/ec76511a847f742881a7b2d9ec8939ce.jpg"></div>
-            <div class="swiper-slide"><img src="https://i.pinimg.com/736x/0b/5e/db/0b5edb9bbf2d68cc389e6270453563c9.jpg"></div>
-            <div class="swiper-slide"><img src="https://quizlet.com/cdn-cgi/image/f=auto,fit=cover,h=200,onerror=redirect,w=240/https://o.quizlet.com/rvmHkyznHUGCRhJ0KDin4w.jpg"></div>
-            <div class="swiper-slide"><img src="https://i.imgflip.com/91lp13.jpg"></div>
-            <div class="swiper-slide"><img src="https://yandex-images.clstorage.net/L9ZOB5408/ae2ab9wt_/KaKH5cjaJSdxci09ZcoyfhZDidA2jmmCNcwikSbL6HbKAuX_lpsPopRXQvlZgLJnVVi8wZYqmvMg6trgKJMDFmS3xviJz1w7cWZ8EUz6Wk5WFrmlOtth5iXRRqB_VkW_A9NICj9mywN0N1-AHMGSPkxoTCnfijJ-2DYbmBAu-m81MsehBDoguwXeXDm5EpK2Cir5YDpvSTd57L9RE3odD9-fEHKjqpfvBPPrJMDhR6I4AHB8u6rKfkxqO5RwGvLXFZq33cjeABcNPiRRJQqeOiJ-GWCq68H_ZSyH-R86pRdHl_SaY0pbR4jH-yCkmSeymBS00H9e3kq8upcMHDouy22yrz18BlDDYarIRTV-rtYGsuUsJrd5v428A_Fb_o2vO1Nw7ntSR3vowxfshEVnCriALPC7qlpe7Cp36BAWPhsx2o_lWHI4r2kmMNUNBlbeSoLVuO6fAWsVeI85K2Zh34PnuJ6T5mdvYH-LlKzNYz6IYJhIn24qJnzaAwj0uiLbaTZrAfDSNBddIgCR6YYWUgYeiahuexlzleALaT_ylaOnV5SWf07TE9wzv_hUjbvumOgYNGO-Xq54fnuIEKa6X0l-D5mc0tBTkS5oAQkOYkJqntXchm9tH-Vs58WfpgH749f4EsvWewfczzN4GAnbGqC02Fg3_k7qzMpj7JAabtdJ7tPlrK6g_60uXN21bs4-riYZVAYTEQuV1A91fzqlpxN7EOYXBk-vbBv7PJjtz8oo6KTIQ-Y-IlzqM2iEQj4X7V476SSmRH8hdjylsY7O_q7Ciag285nzBUCLDfeiPdMvh2juE4oX-4jHY3wYlSPujJQsdE9eJkrwMstYYKoK7xFmX-nAtsAD0VpwJQ1mFnKSxtkwxlPdO9XIl3Ejtg2jE0_oaueGmwvIf-to0N0TCsAQgBTDchY2TMJfiBSuIndJLt9xiKa0JxlmyKEJLrbKBoadrA7bnedZ4NP5by7s"></div>
-            
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://lekalo-rf.ru/image/cache/catalog/subaru/subaru_outback_514554-800x800.jpg"
+          />
         </div>
+        <div class="swiper-slide">
+          <img
+            src="https://i.pinimg.com/736x/42/a8/e1/42a8e1050aff728ec52756225e47c454.jpg"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Blue-eared_Kingfisher%281%29.jpg"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://i.pinimg.com/736x/9c/0c/76/9c0c764aa9649ee19fa67e9d6d0f7a48.jpg"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://i.pinimg.com/736x/0b/5e/db/0b5edb9bbf2d68cc389e6270453563c9.jpg"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://10.img.avito.st/image/1/1.Dkcxv7a1oq5LFmymIdsMEkseoK6PFGymSxagrA.xMhAYvtiu3uPrXUtWLLBdxlah5C7-C5AZhGVW8AqFIs?cqp=2.HvCFS2_KF3dImFHcLRrBLX1aNHtU_r_CR2pTThTfYowI-OfZOqPKILVTUWTPyhZuUZsbnB-YXEKt4Idi-EqD0z3t"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.imgflip.com/91lp13.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://iheartdogs.com/wp-content/uploads/2025/01/bird-8137008_1280-1.png"
+          />
+        </div>
+      </div>
 
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <div class="swiper-pagination"></div>
+      <div class="swiper-pagination"></div>
     </div>
+    <footer>
+      <div class="foot">
+        <h3>by Данил Клецки</h3>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <script>
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 100,
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
 
-    <script>
-        const swiper = new Swiper('.swiper', {
-            loop: true,
-            slidesPerView: 3,
-            spaceBetween: 100,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true
-            },
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            breakpoints: {
-                0:   { slidesPerView: 1 },
-                600: { slidesPerView: 2 },
-                900: { slidesPerView: 3 }
-            }
-        });
-    </script>
-
-</body>
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        600: { slidesPerView: 2 },
+        900: { slidesPerView: 3 },
+      },
+    });
+  </script>
 </html>
-
-
