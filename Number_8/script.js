@@ -55,7 +55,7 @@ form.addEventListener("submit", async (e) => {
     const formData = new FormData(form);
 
     try {
-        const response = await fetch("https://formcarry.com/s/4STEnQyT0UW", {
+        const response = await fetch("https://formcarry.com/s/p2wJAD5WBB2", {
             method: "POST",
             body: formData,
             headers: { "Accept": "application/json" }
@@ -72,4 +72,5 @@ form.addEventListener("submit", async (e) => {
         statusText.textContent = "Ошибка сети";
     }
 });
+
 
