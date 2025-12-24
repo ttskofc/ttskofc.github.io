@@ -544,7 +544,7 @@ img {
 
   .representative__img {
     min-width: 100%;
-    min-height: 500px;
+    min-height: 100%;
     background-size: cover;
   }
 
